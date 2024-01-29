@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+    box-sizing: border-box;
+}
+body, body * {
+    border-bottom: solid black .1px;
+    border-right: solid black .1px;
+}
+html, body {
+    overflow: hidden;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('img/stars.jpg');
+    background-position: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.outer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    
+}
+.container {
+    border: solid black 3px;
+    border-radius:12px;
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    width: 90vh;
+    background-color: white;
+    margin-bottom: 16px;
+    padding:1px;
+}
+.row {
+    display: flex;
+    flex: 1;
+}
+
+.col {
+   flex: 1;
+   cursor: pointer;
+}
+
+.col:hover {
+    background-color: blueviolet;
+}
+
+button {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #7D3896;
+    color: white;
+    padding:16px;
+    border-radius: 8px;
+    margin: 16px;
+    font-size: 24px;
+    cursor: pointer;
+    border: solid white 2px;
+}
+
+button:hover {
+    background-color: aquamarine;
+    color: black;
+}
+
